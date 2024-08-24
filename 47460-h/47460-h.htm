@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<!-- terminate if block for class html -->
+
+<title>Practical Skunk Raising, by William E. Pratt</title>
+<link rel="schema.DC" href="http://dublincore.org/documents/1998/09/dces/" />
+<meta name="DC.Title" content="Practical Skunk Raising" />
+<meta name="DC.Creator" content="William E. Pratt" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Format" content="text/html" />
+<meta name="pss.pubdate" content="1915" />
+<style type="text/css">
+large { font-size:125%; }
+sc    { font-variant:small-caps; font-style: normal; }
+/* == GLOBAL MARKUP == */
+body, table.twocol tr td  { margin-left:2em; margin-right:2em; }   /* BODY */
+.box     { border-style:double; margin-bottom:2em; max-width:28em; margin-right:auto; margin-left:auto; margin-top:2em; }
+.box p   { margin-right:1em; margin-left:1em; }
+.box dl  { margin-right:1em; margin-left:1em; }
+h1, h3, h5, h6, .titlepg p { text-align:center; clear:both; }   /* HEADINGS */
+h2                { margin-top:1.5em; margin-bottom:1em; text-align:center; clear:right; }
+h1                { margin-top:3em; }
+div.box h1        { margin-top:1em; }
+h3                { margin-top:2.5em; }
+h4, h5            { font-size:100%; text-align:center; clear:right; }
+h6                { font-size:100%; }
+h6.var            { font-size:80%; font-style:normal; }
+.titlepg          { margin-left:auto; margin-right:auto; border-style:double; clear:both; }
+span.chaptertitle { font-style:normal; display:block; text-align:center; font-size:150%; }
+.tblttl           { text-align:center; }
+.tblsttl          { text-align:center; font-variant:small-caps; }
+
+pre sub.ms { width:4em; letter-spacing:1em; }
+table.fmla { text-align:center; margin-top:0em; margin-bottom:0em; margin-left:0em; margin-right:0em; }
+table.inline, table.symbol { display: inline-table; vertical-align: middle; }
+td.cola           { text-align:left; vertical-align:100%; }
+td.colb           { text-align:justify; }
+td.l              { text-align:left;  font-size:90%; font-weight:bold; text-indent:2em; margin-top:0; margin-bottom:0; }
+td.r              { text-align:right; font-size:90%; font-weight:bold; margin-top:0; margin-bottom:0;  }
+
+p, blockquote, div.p, div.bq { text-align:justify; }      /* PARAGRAPHS */
+div.p, div.bq   { margin-top:1em; margin-bottom:1em; }
+blockquote, .bq { margin-left:1em; margin-right:0em; margin-top:2em; margin-bottom:2em;}
+.verse    { font-size:100%; }
+p.indent  {text-indent:2em; text-align:left; }
+p.tb, p.tbcenter, verse.tb, blockquote.tb      { margin-top:2em; }
+
+span.pb, div.pb, dt.pb, p.pb                                      /* PAGE BREAKS */
+{ text-align:right; float:right; margin-right:0em; clear:right; }
+div.pb { display:inline; }
+.pb, dt.pb, dl.toc dt.pb, dl.tocl dt.pb    { text-align:right; float:right; margin-left: 1.5em;
+         margin-top:.5em; margin-bottom:.5em; display:inline; text-indent:0;
+         font-size:80%; font-style:normal; font-weight:bold;
+         color:gray; border:1px solid gray;padding:1px 3px; }
+div.index .pb  { display:block; }
+.bq  div.pb, .bq span.pb  { font-size:90%; margin-right:2em; }
+
+div.img, body a img  {text-align:center; margin-left:auto; margin-right:auto; margin-top:2em; margin-bottom:2em; clear:right; }
+p.caption { margin-left:1em; margin-right:1em; }
+
+sup, a.fn { font-size:75%; vertical-align:100%; line-height:50%; font-weight:normal; }
+h3   a.fn { font-size:65%; }
+sub { font-size:75%; }
+.center, .tbcenter       { text-align:center; clear:both; }                  /* TEXTUAL MARKUP */
+span.center              { display:block; }
+table.center { clear:both; margin-right:auto; margin-left:auto; }
+table.inline, table.symbol { display: inline-table; vertical-align: middle; }
+
+p           { clear:left; }
+.small, .lsmall      { font-size:90%; }
+.smaller    { font-size:80%; }
+.smallest   { font-size:67%; }
+.larger     { font-size:150%; }
+.large      { font-size:125%; }
+.xlarge     { font-size:200%; line-height:60%; }
+.xxlarge    { font-size:200%; line-height:60%; }
+.gs         { letter-spacing:1em; }
+.gs3        { letter-spacing:2em; }
+.gslarge    { letter-spacing:.3em; font-size:110%; }
+.sc         { font-variant:small-caps; font-style: normal; }
+.xo         { position:relative; left:-.3em; }
+.over, over { text-decoration: overline; display:inline; }
+hr          { width:20%; }
+.jl         { text-align:left; }
+.jr         { text-align:right; min-width:2em; }
+.jr1        { text-align:right; margin-right:0em; }
+.ind1       { text-align:left;  margin-left:2em; }
+.u          { text-decoration:underline; }
+.hst        { margin-left:2em; }
+.rubric     { color:red; }
+ul  li      { text-align:justify; }
+
+dd.t           { text-align:left; margin-left: 5.5em; }
+dl.toc         { clear:both; margin-top:1em; }                    /* CONTENTS (.TOC) */
+.toc  dt.center    { text-align:center; clear:both; margin-top:3em; margin-bottom:1em;}
+.toc  dt      { text-align:left; clear:left; }
+.toc  dd      { text-align:right; clear:both; }
+.toc  dd.ddt  { text-align:right; clear:both; margin-left:4em; }
+.toc  dd.ddt2 { text-align:right; clear:both; margin-left:5em; }
+.toc  dd.ddt3 { text-align:right; clear:both; margin-left:6em; }
+.toc  dd.ddt4 { text-align:right; clear:both; margin-left:7em; }
+.toc  dd.ddt5 { text-align:right; clear:both; margin-left:8em; }
+.toc  dd.note { text-align:justify; clear:both; margin-left:5em; text-indent:-1em; margin-right:3em; }
+.toc  dt .xxxtest {width:17em; display:block; position:relative; left:4em; }
+.toc  dt  a,
+.toc  dd  a,
+.toc dt span.left,
+.toc dt span.lsmall,
+.toc dd span.left { text-align:left; clear:right; float:left; }
+.toc  dt  a  span.cn { width:4em; text-align:right; margin-right:0;  float:left; }
+.toc  dt.sc   { text-align:right; clear:both; }
+.toc  dt.scl  { text-align:left; clear:both; font-variant:small-caps; }
+.toc  dt.sct  { text-align:right; clear:both; font-variant:small-caps; margin-left:1em; }
+.toc  dt.jl   { text-align:left; clear:both; font-variant:normal; }
+.toc  dt.scc  { text-align:center; clear:both; font-variant:small-caps; }
+.toc  dt span.lj { text-align:left; display:block; float:left; }
+.toc  dd.center { text-align:center; }
+dd.tocsummary {text-align:justify; margin-right:2em; margin-left:2em; }
+dd.center sc  {display:block; text-align:center; }
+/* BOX CELL */
+td.top { border-top:1px solid; width:.5em; height:.8em; }
+td.bot { border-bottom:1px solid; width:.5em; height:.8em; }
+td.rb  { border:1px solid; border-left:none; width:.5em; height:.8em;  }
+td.lb  { border:1px solid; border-right:none; width:.5em; height:.8em;  }
+
+/* INDEX (.INDEX) */
+dl.index   { clear:both; }
+.index dd  { margin-left:4em; text-indent:-2em; text-align:left; }
+.index dt  { margin-left:2em; text-indent:-2em; text-align:left; }
+.index dt.center {text-align:center; }
+                                                           /* FOOTNOTE BLOCKS */
+div.notes p  { margin-left:1em; text-indent:-1em; text-align:justify; }
+
+dl.undent dt { margin-left:1em; text-indent:-1em; text-align:justify; }
+                                                           /* POETRY LINE NUMBER */
+.lnum   { text-align:right; float:right; margin-left:.5em; display:inline; }
+
+.hymn     { text-align:left; }                                  /*  HYMN AND VERSE: HTML  */
+.verse    { text-align:left; margin-top:1em; margin-bottom:1em; margin-left:0em; }
+.versetb  { text-align:left; margin-top:2em; margin-bottom:1em; margin-left:0em; }
+.originc  { text-align:center; }
+.subttl   { text-align:center; font-size:80%; }
+.srcttl   { text-align:center; font-size:80%; font-weight:bold; }
+p.t0, p.l { margin-left:4em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.lb                 { margin-left:4em;  text-indent:-3em; margin-top:2em; margin-bottom:0; text-align:left; }
+p.tw, div.tw, .tw    { margin-left:1em;  text-indent:-1em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t,  div.t,  .t     { margin-left:5em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t2,  div.t2,  .t2  { margin-left:6em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t3,  div.t3,  .t3  { margin-left:7em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t4,  div.t4,  .t4  { margin-left:8em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t5,  div.t5,  .t5  { margin-left:9em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t6,  div.t6,  .t6  { margin-left:10em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t7,  div.t7,  .t7  { margin-left:11em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t8,  div.t8,  .t8  { margin-left:12em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t9,  div.t9,  .t9  { margin-left:13em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t10, div.t10,.t10  { margin-left:14em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t11, div.t11,.t11  { margin-left:15em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t12, div.t12,.t12  { margin-left:16em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t13, div.t13,.t13  { margin-left:17em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t14, div.t14,.t14  { margin-left:18em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t15, div.t15,.t15  { margin-left:19em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.lr, div.lr, span.lr { display:block; margin-left:0em; margin-right:1em; margin-top:0; margin-bottom:0; text-align:right; }
+dt.lr                { width:100%; margin-left:0em; margin-right:0em; margin-top:0; margin-bottom:0; margin-top:1em; text-align:right; }
+dl dt.lr a           { text-align:left; clear:left; float:left; }
+
+.fnblock   { margin-top:2em; }
+.fndef     { text-align:justify; margin-top:1.5em; margin-left:1.5em; text-indent:-1.5em; }
+.fndef p.fncont, .fndef dl { margin-left:0em; text-indent:0em; }
+dl.catalog dd { font-style:italic; }
+dl.catalog dt { margin-top:1em; }
+.author { text-align:right; margin-top:0em; margin-bottom:0em; display:block; }
+
+dl.biblio  dt        { margin-top:.6em; margin-left:2em; text-indent:-2em; text-align:justify; clear:both; }
+dl.biblio  dt  div   { display:block; float:left; margin-left:-6em; width:6em; clear:both; }
+dl.biblio  dt.center { margin-left:0em; text-align:center; }
+dl.biblio  dd        { margin-top:.3em; margin-left:3em; text-align:justify; font-size:90%; }
+.clear     { clear:both; }
+p.book     { margin-left:2em; text-indent:-2em; }
+p.review   { margin-left:2em; text-indent:-2em; font-size:80%; }
+
+span.col  {width:6em; display:inline-block; }</style>
+</head>
+<body>
+
+<div id="cover" class="img">
+<img id="coverpage" src="images/cover.jpg" alt="Practical Skunk Raising" width="422" height="800" />
+</div>
+<div class="box">
+<h1><span class="u">PRACTICAL
+<br />SKUNK RAISING.</span></h1>
+<p class="center">A BOOK OF INFORMATION CONCERNING THE RAISING OF SKUNKS FOR PROFIT.</p>
+<p class="tbcenter">By
+<br />WILLIAM EDWIN PRATT.</p>
+<p class="tbcenter">Published by William E. Pratt.</p>
+<p class="tbcenter">Copyright 1915,
+<br />By WILLIAM E. PRATT.</p>
+</div>
+<h2>CONTENTS.</h2>
+<dl class="toc">
+<dt>Chapter&mdash;</dt>
+<dt><a href="#c1"><span class="cn">1.&mdash;</span>Introduction.</a></dt>
+<dt><a href="#c2"><span class="cn">2.&mdash;</span>Ground.</a></dt>
+<dt><a href="#c3"><span class="cn">3.&mdash;</span>The Fence.</a></dt>
+<dt><a href="#c4"><span class="cn">4.&mdash;</span>Pens.</a></dt>
+<dt><a href="#c5"><span class="cn">5.&mdash;</span>Dens.</a></dt>
+<dt><a href="#c6"><span class="cn">6.&mdash;</span>Cage Litter.</a></dt>
+<dt><a href="#c7"><span class="cn">7.&mdash;</span>Food Troughs.</a></dt>
+<dt><a href="#c8"><span class="cn">8.&mdash;</span>Food House.</a></dt>
+<dt><a href="#c9"><span class="cn">9.&mdash;</span>Feeding.</a></dt>
+<dt><a href="#c10"><span class="cn">10.&mdash;</span>Water Troughs.</a></dt>
+<dt><a href="#c11"><span class="cn">11.&mdash;</span>Examining Box.</a></dt>
+<dt><a href="#c12"><span class="cn">12.&mdash;</span>Diseases.</a></dt>
+<dt><a href="#c13"><span class="cn">13.&mdash;</span>Rats.</a></dt>
+<dt><a href="#c14"><span class="cn">14.&mdash;</span>Disinfectants.</a></dt>
+<dt><a href="#c15"><span class="cn">15.&mdash;</span>Hospital.</a></dt>
+<dt><a href="#c16"><span class="cn">16.&mdash;</span>Breeding and Winter Management.</a></dt>
+<dt><a href="#c17"><span class="cn">17.&mdash;</span>Barren Females.</a></dt>
+<dt><a href="#c18"><span class="cn">18.&mdash;</span>Breeding Mothers.</a></dt>
+<dt><a href="#c19"><span class="cn">19.&mdash;</span>Young.</a></dt>
+<dt><a href="#c20"><span class="cn">20.&mdash;</span>Escapes.</a></dt>
+<dt><a href="#c21"><span class="cn">21.&mdash;</span>Disarming.</a></dt>
+<dt><a href="#c22"><span class="cn">22.&mdash;</span>How to ship skunks.</a></dt>
+<dt><a href="#c23"><span class="cn">&nbsp;</span>Conclusion.</a></dt>
+</dl>
+<div class="pb" id="Page_5">5</div>
+<h2 id="c1"><span class="large">Practical Skunk Raising.</span></h2>
+<p class="center">By William E. Pratt.</p>
+<p>The supply of wild fur has already fallen
+behind the demand and the time is in sight
+when wild fur will form but a small per cent
+of that in use.</p>
+<p>All furs trapped in steel traps are less
+beautiful because the animal suffers. It is
+a well-known fact that the less the animal
+suffers, the better the fur.</p>
+<p>The time is not far away when nearly all
+fur will be grown on fur-ranches. Fur-farming
+unquestionably has a great future
+as an industry.</p>
+<p>Without detailing countless failures; it is
+well to begin by disposing of the wrong idea
+that most people begin with, that all they
+need to do is secure an island or a big
+fenced area, and throw in much feed to a
+bunch of selected fur-bearers, and reap a
+harvest of so many pelts each year.</p>
+<p>The absurdity of this is seen if we compare
+it to a horse-breeder who would put a
+high fence around a large pasture and turn
+in a couple stallions and a dozen mares;
+throw in much feed daily, and expect a harvest
+of so many colts, each year.</p>
+<p>No,&mdash;success depends on general supervision
+and control of each individual.</p>
+<p>Skunks raise a better coat in captivity than
+when wild, because their food is gotten without
+hunting for it, and are beyond danger
+of man, dogs, and other intruders. Striped
+skunks ten years ago sold for one dollar per
+pair, while only two dollars per pair was
+paid for &ldquo;star blacks&rdquo;. Three years ago or
+more these prices had doubled, and a skunk
+with his scent glands out was even more
+valuable.</p>
+<div class="pb" id="Page_6">6</div>
+<p>One male and two females is a good lot
+to begin with, which would increase to
+twenty young the first year, and one hundred
+and fifty the second, providing one
+could wait that long, and one certainly
+could not expect any dividend until the fifth
+year.</p>
+<h2 id="c2">2.&mdash;The Ground.</h2>
+<p>An acre of ground is sufficient to begin
+with, but one must have it situated so one
+could increase to perhaps ten acres. It
+should be high, dry and sandy, with some
+grass in the plot, and not too remote from
+a railway station.</p>
+<h2 id="c3">3.&mdash;The Fence.</h2>
+<p>An inexpensive fence to begin with may
+be made by setting posts in the ground close
+together, but strongly. I recommend a fence
+made of wire netting or steel set or inbedded
+in the ground from one to two feet.
+First, dig a trench about one foot wide and
+two feet deep, and put heavy rock in the
+bottom and thus, with the rock below the
+wire there will be no way that the skunks
+can escape by digging.</p>
+<p>The posts should be set ten feet apart. If
+set farther the wire will have a tendency to
+sag. The wire should be of one and a half
+inch mesh for the main fence, and one inch
+mesh for the breeding yards, as young
+skunks sometimes escape through a one
+and a half inch mesh. No. 16, or 18,
+gauge wire from four to eight feet in height
+should be used. Any smaller gauge than
+the above mentioned is not durable enough.</p>
+<p>A wire or board inhang of twelve inches,
+should be placed at the top rejecting in so
+the animals can&rsquo;t climb out. This is attached
+by slats nailed along the tops of the
+posts and the wire nailed to them. Steel
+<span class="pb" id="Page_7">7</span>
+sheeting needs no inhang, because it is so
+that the skunks cannot get a foothold.</p>
+<p>If the skunks dig at night to get out fill
+up the holes as soon as possible and thus
+discourage the workers.</p>
+<p>The big pen or large enclosure, serves as
+a range for the barren females, males, and
+young skunks during autumn.</p>
+<h2 id="c4">4.&mdash;Pens.</h2>
+<p>Many breeders consider pens better and
+cheaper than dens. These are little runs
+about ten feet square, separated only by a
+three foot netting which has an inhang or
+overhang as it is some times called, of a
+foot on each side, so the skunks cannot
+climb in or out. If boards are used for
+pens inside the big fence no overhang is
+needed. All pens should be completely
+floored with mesh wire three or four inches
+under surface.</p>
+<h2 id="c5">5.&mdash;Dens.</h2>
+<p>Every cage or pen needs a movable den
+that is dry, sanitary, portable, easy for observation,
+and warm. This last feature is
+important, for skunks are sensitive to cold
+which causes pneumonia. The dens should
+be well supplied with straw and rags, (avoid
+hay) because the seeds are injurious to the
+nostrils.</p>
+<h2 id="c6">6.&mdash;Cage Litter.</h2>
+<p>After trying smooth floored dens, and
+floors strewn with straw, chips, ashes and
+sawdust; I feel safe in recommending sawdust,
+as its great absorbent power helps
+to keep clean dens. It should cover the
+floor to a depth of two inches.</p>
+<div class="pb" id="Page_8">8</div>
+<h2 id="c7">7.&mdash;Food Troughs.</h2>
+<p>Do not use wooden troughs; they are
+unsanitary. Pie dishes either tin or ware,
+will do if the sides do not flare. If they do
+the skunk usually spills the milk or any
+liquid in the dish, by standing on the sides
+with its paws.</p>
+<h2 id="c8">8.&mdash;Food House.</h2>
+<p>The food and tool-house should be in the
+pen for convenience. There should be mice
+and rat-proof vessels to keep the oatmeal
+and dry biscuit, cheese, and meat in. It
+should be equipped with a large boiler for
+boiling oatmeal and meat in. The meat
+may also be smoked as this will preserve it,
+and is greatly preferred by the animals.
+The meat may be hung out of reach of the
+rats in sacks.</p>
+<h2 id="c9">9.&mdash;Feeding.</h2>
+<p>Skunks like most animals are omnivorous.
+A continuous unbroken diet of meat would
+eventually wipe out the stock; as would a
+diet solely vegetable. Moderate varied feeding
+is essential. Adult skunks are fed once
+a day, they themselves prefer it after dark.
+Staple articles of food are beef, rabbit, cow
+liver, chicken giblets, oatmeal, and other
+porridge, cooked potatoes and milk; anything
+a dog will eat with fruit and insects
+added. Be sure the meat is clear of infection.</p>
+<p>Another staple article of food is a bread
+made of bran and shorts. Mix with three
+quarts of sour milk, enough flour to make a
+stiff dough. Roll dough out until it is an
+inch thick and bake for an hour like bread
+in a hot oven.</p>
+<p>This is much relished by all fur-bearing
+animals, and is still more acceptable if
+<span class="pb" id="Page_9">9</span>
+flavored with a few spoonfuls of black
+molasses.</p>
+<p>Milk must be given sparingly unless it
+agrees with the stock. Once a week is
+enough, more than that is liable to induce
+scouring and other disorders. Half a dog
+biscuit, and a few scraps of meat are enough
+for a skunk&rsquo;s daily allowance. Of course
+some should have more than others according
+to their needs.</p>
+<p>A brood-mother growing or suckling her
+young should have as much as she can eat
+twice a day, morning and evening.</p>
+<p>When winter comes, skunks retire to their
+dens and eat nothing for weeks. In March
+the feeding is resumed and in April the
+brood mothers are extra fed with a preponderance
+of meat, much of it raw. It costs
+from twenty-five cents to a dollar to feed a
+skunk from June first to December first.
+Meat and fresh water are necessary at all
+times for brood-mothers, for if this is neglected
+they will devour the young as soon
+as born.</p>
+<h2 id="c10">10.&mdash;Water Troughs.</h2>
+<p>Skunks drink much, and often. They
+must have plenty of fresh water at all
+times; especially when the young are expected.
+The vessel that the water at all
+times is kept in should be washed every
+day. In winter the skunks lap up snow instead
+of water.</p>
+<h2 id="c11">11.&mdash;Examining Box.</h2>
+<p>No cautious man would undertake to
+examine a wild skunk as he would a dog
+or rabbit. Yet it is important to know sex
+and condition of each new skunk as it
+arrives. This may be easily and quickly
+done by means of an examining box. This
+is a small box 10&Prime; by 8&Prime; by 6&Prime; covered with
+<span class="pb" id="Page_10">10</span>
+a chicken wire of about one inch mesh on
+the top. There should be a six inch entrance
+at one end of the box.</p>
+<p>On the solid wood bottom is a handle
+which is of course the top, when the box
+is turned wire side down.</p>
+<p>Chase the skunk in the entrance slowly
+and then lift the box up by the handle and
+look under without fear. As soon as the
+operation is over the skunk will seek his
+proper den.</p>
+<h2 id="c12">12.&mdash;Diseases.</h2>
+<p>The keeper should watch the animal&rsquo;s
+dung, if too fluid or too soft, too copious or
+too little, there is something wrong. Their
+appetite, and the dung are the great tests.
+If these are right there is little chance of
+anything being wrong.</p>
+<p>Greed&mdash;Some cases often abound among
+skunks such as over-eating; by getting all
+they can from the other skunks, after eating
+their own food. Such freaks should be
+isolated and marketed as soon as possible.</p>
+<p>Cannibalism&mdash;Sometimes when enclosures
+are small the mothers devour the young as
+soon as born. This is sometimes the result
+of quarreling. Always build the enclosures
+large enough so the skunks have plenty of
+room.</p>
+<p>Murder&mdash;Murder must be considered a
+disease. Some individuals are incapable of
+it while others are very prone to it. The
+last mentioned soon make themselves
+known. They should be marketed as soon
+as possible.</p>
+<p>Distemper&mdash;This may be detected by the
+animal&rsquo;s eyes and nose running. The animal
+should be sent at once to the hospital, and
+treated by washing the nose and eyes with
+a solution of boric acid and water.</p>
+<div class="pb" id="Page_11">11</div>
+<p>Mange&mdash;Mange is considered a serious
+disease, and is caused by fleas which induce
+the animal to scratch. The fur gets thin
+and the body is covered with scabs. This
+may be cured by applying a good flea
+powder and a dip.</p>
+<p>Worms&mdash;Worms may be eliminated by
+feeding the skunks in a dish of clear, sharp,
+sand.</p>
+<p>Other Foes&mdash;While the armed skunk travels
+about without fear of man or beast, it
+must be remembered that the disarmed
+young skunks may be killed by dogs, or
+taken by horned owls or any other large
+bird.</p>
+<h2 id="c13">13.&mdash;Rats.</h2>
+<p>Rats are a great nuisance about a fur
+ranch. They often dig holes and teach the
+young skunks the way to escape. They also
+kill the young, and are quick enough to keep
+out of the way of the mother.</p>
+<h2 id="c14">14.&mdash;Disinfectants.</h2>
+<p>Those I use are&mdash;Chloride of lime, peroxide
+of hydrogen, and lysol, 2%.</p>
+<p>To disinfect a den, put it in a large tub
+and soak it in &ldquo;sheep dip&rdquo;.</p>
+<p>To disinfect a corner, sprinkle with chloride
+of lime.</p>
+<h2 id="c15">15.&mdash;Hospital.</h2>
+<p>The hospital is a series of cages, quite
+removed from the other, with the earth and
+grass for a floor, and good opportunities
+for a &ldquo;sun bath&rdquo;. Sick animals should be
+put in the hospital as soon as noted.</p>
+<h2 id="c16">16.&mdash;Breeding and Winter Management.</h2>
+<p>The stock should be mated about November
+or December. Put one male to four or
+<span class="pb" id="Page_12">12</span>
+five females. It is well to watch them for
+a few days to make sure the group is harmonious.
+Often it happens that one female
+will quarrel with the others.</p>
+<p>She should be removed and tried somewhere
+else. If one is seen outside the den
+constantly, this is the cause.</p>
+<p>Put plenty of straw in the den and they
+will make themselves comfortable enough.</p>
+<p>During the winter they eat nothing. Some
+breeders deem it wise to feed a light meal a
+week.</p>
+<p>Mating time is from the middle of March,
+starting with February. Males must not
+meet at this time for they will fight, until
+one or the other is killed.</p>
+<h2 id="c17">17.&mdash;Barren Females.</h2>
+<p>Three or four days after mating season
+has set in, remove the male and try some
+other male in, or for a few days. As the
+males are decided in their likes and dislikes.
+Neglect of this precaution will result in a
+large proportion of barren females.</p>
+<h2 id="c18">18.&mdash;Breeding Mothers.</h2>
+<p>By April first every female should be
+given a separate den, and well fed and cared
+for.</p>
+<p>This is the most important time of all,
+success or failure depends on the management
+of the mother at this time. Toward
+the end of the month she should be given
+raw meat and plenty of water. This diet
+should be given until mid-May, as this allays
+the meat craving which causes the mother
+to devour the new-born young.</p>
+<p>I will repeat again the watchwords of
+success&mdash;</p>
+<p>Proper sanitation, seclusion, and quiet,
+an abundance of raw meat and fresh water.</p>
+<div class="pb" id="Page_13">13</div>
+<p>The period of gestation is nine weeks;
+the young are born in mid-May.</p>
+<p>The young females have from four to six
+young the first litter and the older females
+have from eight to sixteen to one litter.</p>
+<p>Never put two females with young, in the
+same house for they will fight and steal one
+and anothers&rsquo; young.</p>
+<p>One family in one house is a good old
+rule to observe.</p>
+<p>When one month old they are able to
+walk around and drink milk. I would advise
+disarming and weaning at this time.</p>
+<h2 id="c19">19.&mdash;Young.</h2>
+<p>The young grow very fast and soon become
+as tame as kittens, some show their
+amazing temper at this age, from the beginning.</p>
+<p>At thirty days they walk alone and drink
+milk. At sixty days they will weigh on the
+average of six lbs. each, and appear to be
+half grown. At six months they are full-grown,
+and weigh from four to six lbs.</p>
+<p>At this age they are ready to be marketed.</p>
+<h2 id="c20">20.&mdash;Escapes.</h2>
+<p>It is well to be prepared for escapes. A
+properly constructed fence will prevent this.</p>
+<p>Two contrivances should be in stock&mdash;net
+and traps.</p>
+<p>Net&mdash;This is an ordinary dip net to put
+over them.</p>
+<p>Traps&mdash;These are box traps, or &ldquo;catch-alives&rdquo;.
+They are easily constructed, and
+one half dozen will be found convenient for
+many purposes.</p>
+<h2 id="c21">21.&mdash;Disarming.</h2>
+<p>To prevent a shot from this deadly battery
+of the skunk they are disarmed while very
+young. When animals are young the operation
+<span class="pb" id="Page_14">14</span>
+is a simple one; but when performed
+when they are grown not more than one out
+of three survives the operation.</p>
+<p>When ready for disarming, spread a burlap
+or gunnysack across your lap and order
+the assistant to bring the skunk. He must
+be careful to hold it by the tail, with it
+near the ground. The sack is then rolled
+around the animal; rear exposed.</p>
+<p>The assistant holds the animal firmly and
+double muffles the eyes, so it cannot possibly
+see. A skunk seldom shoots unless it
+sees an enemy.</p>
+<p>The proper instruments consist of a scalpel,
+clamping forceps, extracting forceps,
+hook and goggles.</p>
+<p>The scent sacks are located one on each
+side of the vent off one fourth inch from the
+vent.</p>
+<p>To disarm&mdash;First make an incision three
+eighths of an inch long and one half an inch
+from the vent.</p>
+<p>As soon as the incision is made, cut
+deeper until the scent sac appears, which
+is about the size of a bean in young skunks
+and about the size of a marble in mature
+ones.</p>
+<p>With the blunt forceps, force the adhering
+muscles down off the sac, and cut the sac
+off one fourth inch from the vent.</p>
+<p>If the operation is done according to instructions,
+there will be no loss whatever.</p>
+<p>Animals do not require disarming unless
+they are going to be shipped. If skunks
+are raised solely for fur, it is just as well
+to leave them armed.</p>
+<p>Express companies refuse to ship them
+unless scent sacks are removed.</p>
+<h2 id="c22">22.&mdash;How to Ship Skunk.</h2>
+<p>Secure them when ready for market, by
+using a box-trap. Never try to handle
+them.</p>
+<div class="pb" id="Page_15">15</div>
+<p>To ship them, put each in a small soap-box
+lined with tin.</p>
+<p>Cut a hole three inches square in the side
+and cover it with wire of one inch mesh.</p>
+<p>Fasten a tin in one corner of the box
+three inches from the bottom for water.
+Above this make a hole to pour water
+through.</p>
+<p>Mark it &ldquo;water here&rdquo;. Make a lid in the
+box for convenience in feeding.</p>
+<p>One pound of dog biscuits, or bread, and
+a few scraps of meat will amply supply a
+skunk on the road. Label the bag &ldquo;Seven
+days food&rdquo;.</p>
+<p>Do not fear to lift the lid and look in, for
+a skunk must be greatly alarmed and provoked
+before discharging musk.</p>
+<h2 id="c23">Conclusion.</h2>
+<p>If the material in this book is thoroughly
+understood and mastered, and the reader
+is the proud possessor of two &ldquo;star-black&rdquo;
+skunks in a plot, fenced secure against
+escape, in five years he can reap large dividends.</p>
+<div class="img">
+<img src="images/p015.jpg" alt="Decorative tree in pot." width="150" height="298" />
+</div>
+<h2 id="c24">Transcriber&rsquo;s Notes</h2>
+<ul><li>Silently corrected a few palpable typos.</li>
+<li>Retained the original (expired) copyright notice from the printed copy.</li></ul>
+
+</body>
+</html>
